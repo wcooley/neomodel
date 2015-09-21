@@ -18,5 +18,5 @@ env:
 before_install:
   - wget dist.neo4j.org/neo4j-community-$NEO4J_VERSION-unix.tar.gz
   - tar -xzf neo4j-community-$NEO4J_VERSION-unix.tar.gz
-  - sed -i.bak 's/auth_enabled=true/auth_enabled=false/' neo4j-community-2.2.5/conf/neo4j-server.properties
+  - sed -i.bak 's/auth_enabled=true/auth_enabled=false/' neo4j-community-${NEO4J_VERSION}/conf/neo4j-server.properties||:
   - neo4j-community-$NEO4J_VERSION/bin/neo4j start
