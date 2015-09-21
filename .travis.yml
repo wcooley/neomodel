@@ -9,7 +9,6 @@ python:
 install: "python setup.py install"
 script: nosetests -s
 env:
-  - NEO4J_VERSION="2.0.1"
   - NEO4J_VERSION="2.0.4"
   - NEO4J_VERSION="2.1.8"
   - NEO4J_VERSION="2.2.5"
